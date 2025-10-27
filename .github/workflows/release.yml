@@ -106,7 +106,7 @@ jobs:
           echo "ASSET=shieldcontract-${{ github.ref_name }}-${{ matrix.target }}.tar.gz" >> $GITHUB_ENV
       
       - name: Upload artifact
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v5
         with:
           name: ${{ env.ASSET }}
           path: ${{ env.ASSET }}
